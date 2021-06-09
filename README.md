@@ -4,7 +4,7 @@ React.js template project | react, webpack, css modules, jest
 
 ## Enviroments
 
-### evelopment
+### development
 
 ```javascript
 > npm run dev
