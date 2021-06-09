@@ -1,0 +1,55 @@
+{
+	"name": "react-webpack-template",
+	"version": "1.0.0",
+	"description": "React webpack template for new projects",
+	"main": "index.js",
+	"scripts": {
+		"prod": "webpack --env production --config configuration/webpack.config.js",
+		"dev": "webpack server --env development --config configuration/webpack.config.js",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/apocmaster/react-webpack-template.git"
+	},
+	"keywords": [
+		"React.js",
+		"webpack",
+		"templates"
+	],
+	"author": "apocmaster",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/apocmaster/react-webpack-template/issues"
+	},
+	"homepage": "https://github.com/apocmaster/react-webpack-template#readme",
+	"dependencies": {
+		"prop-types": "^15.7.2",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.3",
+		"@babel/preset-env": "^7.14.4",
+		"@babel/preset-react": "^7.13.13",
+		"@testing-library/react": "^11.2.7",
+		"babel-loader": "^8.2.2",
+		"css-loader": "^5.2.6",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^5.3.1",
+		"jest": "^27.0.4",
+		"mini-css-extract-plugin": "^1.6.0",
+		"style-loader": "^2.0.0",
+		"url-loader": "^4.1.1",
+		"webpack": "^5.38.1",
+		"webpack-cli": "^4.7.2",
+		"webpack-dev-server": "^3.11.2",
+		"webpack-merge": "^5.8.0"
+	},
+	"jest": {
+		"moduleNameMapper": {
+			"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+			"\\.(css|less)$": "identity-obj-proxy"
+		}
+	}
+}
